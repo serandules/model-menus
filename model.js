@@ -27,7 +27,7 @@ var schema = Schema({
 }, {collection: 'menus'});
 
 schema.plugin(mongins());
-schema.plugin(mongins.user);
+schema.plugin(mongins.user());
 schema.plugin(mongins.permissions({
     workflow: 'model'
 }));
